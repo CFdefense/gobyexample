@@ -21,3 +21,17 @@ To run an example:
 1. Make sure you have Go installed. You can download it from [golang.org](https://golang.org/dl/).
 2. Navigate to the project directory.
 3. Use `go run`:
+
+## Important Tip
+
+If you're using Rust Analyzer in VS Code and want it to properly understand and lint examples within subdirectories (such as a chapter's Cargo project), you'll need to manually specify the current project in your workspace settings.
+
+In .vscode/settings.json, set rust-analyzer.linkedProjects to point to the Cargo.toml file of the example you're working on:
+
+```bash
+{
+  "rust-analyzer.linkedProjects": [
+    "chapter08_common_collections/hashmaps/Cargo.toml"
+  ]
+}
+```
