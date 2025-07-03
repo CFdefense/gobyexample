@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	// slices are a lightway dynamic view of an arrow
+	// slices are a lightway dynamic view of an array
 	// they will dynamically grow and are init with nil
 	// lets make a new slice
 	var s []string
